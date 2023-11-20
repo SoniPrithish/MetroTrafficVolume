@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title or 'MetroTrafficVolume' }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="page-shell">
+        <div class="bg-orb orb-a"></div>
+        <div class="bg-orb orb-b"></div>
+        <div class="bg-grid"></div>
+
+        <header class="site-header">
+            <a class="brand" href="{{ url_for('home_page') }}">
+                <span class="brand-mark">MT</span>
+                <span class="brand-copy">
+                    <strong>MetroTrafficVolume</strong>
+                    <small>Traffic demand forecasting</small>
+                </span>
+            </a>
+
+            <nav class="nav-actions" aria-label="Primary">
+                <a class="nav-link" href="{{ url_for('home_page') }}">Overview</a>
+                <a class="button button-ghost" href="{{ url_for('predict_datapoint') }}">Try Predictor</a>
+            </nav>
+        </header>
+
+        <main class="content-wrap">
+            {% block content %}{% endblock %}
+        </main>
+    </div>
+</body>
+</html>

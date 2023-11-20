@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-copy">
+        <span class="eyebrow">Operational ML Demo</span>
+        <h1>Forecast hourly traffic volume before congestion becomes visible.</h1>
+        <p class="hero-text">
+            MetroTrafficVolume turns weather and calendar inputs into a traffic demand forecast
+            that can support roadway planning, control-room decision making, and staffing scenarios.
+        </p>
+
+        <div class="hero-actions">
+            <a class="button button-primary" href="{{ url_for('predict_datapoint') }}">Run a Forecast</a>
+            <a class="button button-secondary" href="#workflow">See How It Works</a>
+        </div>
+
+        <div class="stat-strip">
+            <article class="stat-card">
+                <span class="stat-label">Dataset</span>
+                <strong>48k+</strong>
+                <span class="stat-caption">hourly observations</span>
+            </article>
+            <article class="stat-card">
+                <span class="stat-label">Best baseline</span>
+                <strong>R2 0.95</strong>
+                <span class="stat-caption">random forest model</span>
+            </article>
+            <article class="stat-card">
+                <span class="stat-label">Inference path</span>
+                <strong>~23 ms</strong>
+                <span class="stat-caption">preprocess + predict</span>
+            </article>
+        </div>
+    </div>
+
+    <aside class="hero-panel">
+        <div class="hero-panel-card">
+            <div class="panel-kicker">Live forecast example</div>
+            <div class="panel-metric">3,008 vehicles/hr</div>
+            <p>
+                Example scenario: clear Monday morning conditions with low precipitation and
+                light cloud cover.
+            </p>
+
+            <div class="mini-grid">
+                <div>
+                    <span>Weather</span>
+                    <strong>Clear</strong>
+                </div>
+                <div>
+                    <span>Hour</span>
+                    <strong>09:00</strong>
+                </div>
+                <div>
+                    <span>Month</span>
+                    <strong>March</strong>
+                </div>
+                <div>
+                    <span>Flow</span>
+                    <strong>Steady</strong>
+                </div>
+            </div>
+        </div>
+    </aside>
+</section>
+
+<section class="section-grid">
+    <article class="info-card">
+        <span class="section-tag">Why it matters</span>
+        <h2>Designed like a deployable forecasting workflow, not just a notebook.</h2>
+        <p>
+            The project packages ingestion, preprocessing, training, and inference into reusable
+            modules, then exposes the final model through a Flask interface for interactive use.
+        </p>
+    </article>
+
+    <article class="info-card">
+        <span class="section-tag">Key signals</span>
+        <ul class="feature-list">
+            <li>Hourly weather inputs including rain, snow, temperature, and cloud cover</li>
+            <li>Calendar context such as day-of-week, month, holiday status, and hour of day</li>
+            <li>A model-selection workflow comparing multiple regressors before serving</li>
+        </ul>
+    </article>
+</section>
+
+<section class="section-block" id="workflow">
+    <div class="section-heading">
+        <span class="section-tag">Workflow</span>
+        <h2>How the system moves from raw data to a traffic forecast</h2>
+    </div>
+
+    <div class="workflow-grid">
+        <article class="workflow-card">
+            <span class="workflow-step">01</span>
+            <h3>Ingest and clean</h3>
+            <p>Read the metro traffic dataset, filter anomalies, and derive time-based features from timestamps.</p>
+        </article>
+        <article class="workflow-card">
+            <span class="workflow-step">02</span>
+            <h3>Transform features</h3>
+            <p>Apply a mixed preprocessing pipeline for numerical scaling and categorical encoding.</p>
+        </article>
+        <article class="workflow-card">
+            <span class="workflow-step">03</span>
+            <h3>Train and compare</h3>
+            <p>Benchmark multiple regressors and persist the strongest model with the preprocessor.</p>
+        </article>
+        <article class="workflow-card">
+            <span class="workflow-step">04</span>
+            <h3>Serve forecasts</h3>
+            <p>Collect user inputs through the web app, run inference, and return an interpretable volume estimate.</p>
+        </article>
+    </div>
+</section>
+{% endblock %}

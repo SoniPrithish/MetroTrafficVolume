@@ -1,0 +1,138 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="page-intro compact">
+    <span class="eyebrow">Forecast Builder</span>
+    <h1>Configure the traffic scenario</h1>
+    <p>
+        Enter the weather and calendar conditions for a single hour. The model will estimate
+        expected traffic volume for that time slice.
+    </p>
+</section>
+
+<section class="predict-layout">
+    <aside class="predict-sidebar">
+        <div class="sidebar-card">
+            <span class="section-tag">Model inputs</span>
+            <h2>What the forecaster pays attention to</h2>
+            <ul class="feature-list">
+                <li>Weather intensity through temperature, rainfall, snowfall, and cloud cover</li>
+                <li>Behavioral patterns driven by weekday, month, and holiday context</li>
+                <li>Strong hour-of-day effects tied to commute windows and off-peak periods</li>
+            </ul>
+        </div>
+
+        <div class="sidebar-card muted-card">
+            <span class="section-tag">Default sample</span>
+            <p>
+                The form is prefilled with a realistic Monday morning scenario so you can test
+                the app immediately and then refine the inputs.
+            </p>
+        </div>
+    </aside>
+
+    <div class="form-card">
+        <form action="{{ url_for('predict_datapoint') }}" method="POST" class="forecast-form">
+            <div class="form-section">
+                <div class="form-section-header">
+                    <span class="section-tag">Weather Conditions</span>
+                    <h2>Atmospheric inputs</h2>
+                </div>
+
+                <div class="form-grid">
+                    <label class="field">
+                        <span>Temperature</span>
+                        <input type="number" step="0.1" id="Temp" name="Temp" value="303" required>
+                        <small>Kelvin. Example: 303 for a warm day.</small>
+                    </label>
+
+                    <label class="field">
+                        <span>Rainfall</span>
+                        <input type="number" step="0.1" id="Rain" name="Rain" value="0" required>
+                        <small>Millimeters in the last hour.</small>
+                    </label>
+
+                    <label class="field">
+                        <span>Snowfall</span>
+                        <input type="number" step="0.1" id="Snow" name="Snow" value="0" required>
+                        <small>Millimeters in the last hour.</small>
+                    </label>
+
+                    <label class="field">
+                        <span>Cloud Cover</span>
+                        <input type="number" min="0" max="100" step="1" id="Clouds" name="Clouds" value="10" required>
+                        <small>Percentage from 0 to 100.</small>
+                    </label>
+
+                    <label class="field field-wide">
+                        <span>Weather Type</span>
+                        <select id="Weather" name="Weather" required>
+                            <option value="Clear" selected>Clear</option>
+                            <option value="Clouds">Clouds</option>
+                            <option value="Drizzle">Drizzle</option>
+                            <option value="Fog">Fog</option>
+                            <option value="Haze">Haze</option>
+                            <option value="Mist">Mist</option>
+                            <option value="Rain">Rain</option>
+                            <option value="Smoke">Smoke</option>
+                            <option value="Squall">Squall</option>
+                            <option value="Snow">Snow</option>
+                            <option value="Thunderstorm">Thunderstorm</option>
+                        </select>
+                        <small>Choose the dominant observed weather condition.</small>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <div class="form-section-header">
+                    <span class="section-tag">Calendar Context</span>
+                    <h2>Temporal signals</h2>
+                </div>
+
+                <div class="form-grid">
+                    <label class="field">
+                        <span>Hour of Day</span>
+                        <input type="number" min="0" max="23" step="1" id="Time" name="Time" value="9" required>
+                        <small>Use 24-hour format.</small>
+                    </label>
+
+                    <label class="field">
+                        <span>Month</span>
+                        <input type="number" min="1" max="12" step="1" id="Month" name="Month" value="3" required>
+                        <small>1 for January through 12 for December.</small>
+                    </label>
+
+                    <label class="field">
+                        <span>Day</span>
+                        <select id="Day" name="Day" required>
+                            <option value="Monday" selected>Monday</option>
+                            <option value="Tuesday">Tuesday</option>
+                            <option value="Wednesday">Wednesday</option>
+                            <option value="Thursday">Thursday</option>
+                            <option value="Friday">Friday</option>
+                            <option value="Saturday">Saturday</option>
+                            <option value="Sunday">Sunday</option>
+                        </select>
+                        <small>Weekday patterns are a major signal.</small>
+                    </label>
+
+                    <label class="field">
+                        <span>Holiday</span>
+                        <select id="Holiday" name="Holiday" required>
+                            <option value="False" selected>No</option>
+                            <option value="True">Yes</option>
+                        </select>
+                        <small>Choose yes if the date is a holiday.</small>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-actions">
+                <button class="button button-primary" type="submit">Generate Forecast</button>
+                <a class="button button-secondary" href="{{ url_for('home_page') }}">Back to Overview</a>
+            </div>
+        </form>
+    </div>
+</section>
+{% endblock %}

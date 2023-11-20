@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="page-intro compact">
+    <span class="eyebrow">Forecast Result</span>
+    <h1>Your traffic estimate is ready</h1>
+    <p>
+        The model has scored the submitted weather and calendar scenario and translated it into an
+        hourly traffic volume forecast.
+    </p>
+</section>
+
+<section class="results-layout">
+    <div class="result-hero-card">
+        <div class="result-badge band-{{ band_slug }}">{{ traffic_band }}</div>
+        <div class="forecast-number">{{ "{:,.0f}".format(final_result) }}</div>
+        <div class="forecast-unit">predicted vehicles per hour</div>
+        <p class="forecast-note">{{ traffic_note }}</p>
+
+        <div class="hero-actions">
+            <a class="button button-primary" href="{{ url_for('predict_datapoint') }}">Run Another Forecast</a>
+            <a class="button button-secondary" href="{{ url_for('home_page') }}">Back to Overview</a>
+        </div>
+    </div>
+
+    <div class="summary-card">
+        <div class="form-section-header">
+            <span class="section-tag">Scenario Summary</span>
+            <h2>Inputs used for this prediction</h2>
+        </div>
+
+        <div class="summary-grid">
+            {% for label, value in submitted_data.items() %}
+            <div class="summary-item">
+                <span>{{ label }}</span>
+                <strong>{{ value }}</strong>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}
