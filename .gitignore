@@ -1,0 +1,11 @@
+.venv/
+.vscode/
+
+logs/
+**/__pycache__/
+*.pyc
+*.egg-info/
+RegressorProject.egg-info/
+
+docs/result_preview.html
+artifacts/model.pkl
