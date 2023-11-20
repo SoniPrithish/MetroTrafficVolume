@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        .button {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+    </style>
+<head>
+    <title>Prediction Results</title>
+    
+</head>
+<center>
+<img src="data:image/png;base64,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" alt="Results">
+</center>
+<body style="background-color: #f7f7f7;">
+    <center>
+    <div class="container">
+        <h1>Prediction Results</h1>
+        <p>The predicted traffic volume is: {{ final_result }}</p>
+        <a href="/" class="button">Go Back</a>
+    </div>
+    </center>
+</body>
+</html>
