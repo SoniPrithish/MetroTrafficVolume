@@ -1,0 +1,16 @@
+[ 2023-07-10 01:19:59,870 ] 187 werkzeug - WARNING -  * Debugger is active!
+[ 2023-07-10 01:19:59,885 ] 187 werkzeug - INFO -  * Debugger PIN: 143-454-007
+[ 2023-07-10 01:20:02,903 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:20:02] "GET / HTTP/1.1" 200 -
+[ 2023-07-10 01:20:02,959 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:20:02] "GET / HTTP/1.1" 200 -
+[ 2023-07-10 01:20:04,211 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:20:04] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:20:04,257 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:20:04] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:20:18,408 ] 67 root - INFO - Dataframe Gathered
+[ 2023-07-10 01:20:18,409 ] 68 root - INFO -     temp  rain_1h  snow_1h  clouds_all  holiday weather_main  time  month     day
+0  273.0     30.0     30.0        50.0     True       Clouds     2      3  Sunday
+[ 2023-07-10 01:20:19,929 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:20:19] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[ 2023-07-10 01:20:20,650 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:20:20] "[36mGET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[ 2023-07-10 01:20:20,650 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:20:20] "[36mGET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[ 2023-07-10 01:20:20,673 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:20:20] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[ 2023-07-10 01:20:20,682 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:20:20] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:20:20,721 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:20:20] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[ 2023-07-10 01:20:49,592 ] 187 werkzeug - INFO -  * Detected change in 'd:\\metrotrafficvolume\\app.py', reloading

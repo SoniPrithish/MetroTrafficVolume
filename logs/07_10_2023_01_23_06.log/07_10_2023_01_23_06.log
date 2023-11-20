@@ -1,0 +1,104 @@
+[ 2023-07-10 01:23:08,222 ] 187 werkzeug - WARNING -  * Debugger is active!
+[ 2023-07-10 01:23:08,229 ] 187 werkzeug - INFO -  * Debugger PIN: 143-454-007
+[ 2023-07-10 01:23:10,684 ] 67 root - INFO - Dataframe Gathered
+[ 2023-07-10 01:23:10,685 ] 68 root - INFO -     temp  rain_1h  snow_1h  clouds_all  holiday weather_main  time  month     day
+0  273.0     30.0     30.0        50.0     True       Clouds     2      3  Sunday
+[ 2023-07-10 01:23:11,964 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:23:11] "POST /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:23:12,015 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:23:12] "[33mGET /style.css HTTP/1.1[0m" 404 -
+[ 2023-07-10 01:23:12,037 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:23:12] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:23:32,759 ] 67 root - INFO - Dataframe Gathered
+[ 2023-07-10 01:23:32,759 ] 68 root - INFO -     temp  rain_1h  snow_1h  clouds_all  holiday weather_main  time  month     day
+0  273.0     30.0     30.0        50.0     True       Clouds     2      3  Sunday
+[ 2023-07-10 01:23:33,258 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:23:33] "POST /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:23:33,306 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:23:33] "[33mGET /style.css HTTP/1.1[0m" 404 -
+[ 2023-07-10 01:23:33,314 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:23:33] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:25:04,465 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:25:04] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:25:04,511 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:25:04] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:25:49,618 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:25:49] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:25:49,668 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:25:49] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:28:05,687 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:28:05] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:28:05,728 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:28:05] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:28:08,519 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:28:08] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+[ 2023-07-10 01:28:09,253 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:28:09] "[36mGET /predict?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[ 2023-07-10 01:28:09,254 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:28:09] "[36mGET /predict?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[ 2023-07-10 01:28:09,282 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:28:09] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:28:09,283 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:28:09] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[ 2023-07-10 01:28:09,330 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:28:09] "[36mGET /predict?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+[ 2023-07-10 01:28:36,468 ] 67 root - INFO - Dataframe Gathered
+[ 2023-07-10 01:28:36,468 ] 68 root - INFO -     temp  rain_1h  snow_1h  clouds_all  holiday weather_main  time  month     day
+0  240.0     30.0     30.0        60.0     True        Clear     5     12  Sunday
+[ 2023-07-10 01:28:39,152 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:28:39] "POST /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:28:39,218 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:28:39] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:30:12,596 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:30:12] "GET / HTTP/1.1" 200 -
+[ 2023-07-10 01:30:12,639 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:30:12] "GET / HTTP/1.1" 200 -
+[ 2023-07-10 01:30:14,280 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:30:14] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:30:14,319 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:30:14] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:31:45,372 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:31:45] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:31:45,415 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:31:45] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:31:47,732 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:31:47] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:31:47,783 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:31:47] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:31:48,558 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:31:48] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:31:48,598 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:31:48] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:31:48,780 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:31:48] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:31:48,822 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:31:48] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:31:49,282 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:31:49] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:31:49,327 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:31:49] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:32:04,742 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:32:04] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:32:04,779 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:32:04] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:33:23,399 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:33:23] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:33:23,445 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:33:23] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:36:06,403 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:36:06] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:36:06,448 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:36:06] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:36:40,690 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:36:40] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:36:40,735 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:36:40] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:37:05,831 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:37:05] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:37:05,882 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:37:05] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:37:51,022 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:37:51] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:37:51,069 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:37:51] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:38:13,284 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:38:13] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:38:13,333 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:38:13] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:41:58,505 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:41:58] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:41:58,552 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:41:58] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:43:18,453 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:43:18] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:43:18,493 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:43:18] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:43:19,455 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:43:19] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:43:19,495 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:43:19] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:43:41,395 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:43:41] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:43:41,439 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:43:41] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:44:12,110 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:44:12] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:44:12,153 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:44:12] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:46:22,765 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:46:22] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:46:22,805 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:46:22] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:46:49,417 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:46:49] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:46:49,458 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:46:49] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:46:50,561 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:46:50] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:46:50,607 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:46:50] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:47:46,539 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:47:46] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:47:46,587 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:47:46] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:48:10,092 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:48:10] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:48:10,141 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:48:10] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:48:23,431 ] 67 root - INFO - Dataframe Gathered
+[ 2023-07-10 01:48:23,433 ] 68 root - INFO -     temp  rain_1h  snow_1h  clouds_all  holiday weather_main  time  month     day
+0  273.0     30.0     30.0        50.0     True       Clouds     2      3  Sunday
+[ 2023-07-10 01:48:26,145 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:48:26] "POST /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:48:26,204 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:48:26] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:49:22,686 ] 67 root - INFO - Dataframe Gathered
+[ 2023-07-10 01:49:22,687 ] 68 root - INFO -     temp  rain_1h  snow_1h  clouds_all  holiday weather_main  time  month     day
+0  273.0     30.0     30.0        50.0     True       Clouds     2      3  Sunday
+[ 2023-07-10 01:49:24,294 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:49:24] "POST /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:49:24,344 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:49:24] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:49:51,832 ] 67 root - INFO - Dataframe Gathered
+[ 2023-07-10 01:49:51,833 ] 68 root - INFO -     temp  rain_1h  snow_1h  clouds_all  holiday weather_main  time  month     day
+0  273.0     30.0     30.0        50.0     True       Clouds     2      3  Sunday
+[ 2023-07-10 01:49:52,762 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:49:52] "POST /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:49:52,824 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:49:52] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:49:56,498 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:49:56] "GET / HTTP/1.1" 200 -
+[ 2023-07-10 01:49:56,535 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:49:56] "GET / HTTP/1.1" 200 -
+[ 2023-07-10 21:42:41,726 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 21:42:41] "GET / HTTP/1.1" 200 -
+[ 2023-07-10 21:42:41,723 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 21:42:41] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 21:42:41,779 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 21:42:41] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 21:43:18,528 ] 67 root - INFO - Dataframe Gathered
+[ 2023-07-10 21:43:18,536 ] 68 root - INFO -     temp  rain_1h  snow_1h  clouds_all  holiday weather_main  time  month     day
+0  303.0      0.0      0.0        10.0     True        Clear     9      3  Monday
+[ 2023-07-10 21:43:21,450 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 21:43:21] "POST /predict HTTP/1.1" 200 -
+[ 2023-07-10 21:43:21,581 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 21:43:21] "GET /predict HTTP/1.1" 200 -

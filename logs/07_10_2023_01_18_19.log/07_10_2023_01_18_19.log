@@ -1,0 +1,9 @@
+[ 2023-07-10 01:18:23,900 ] 187 werkzeug - WARNING -  * Debugger is active!
+[ 2023-07-10 01:18:23,911 ] 187 werkzeug - INFO -  * Debugger PIN: 143-454-007
+[ 2023-07-10 01:18:33,189 ] 67 root - INFO - Dataframe Gathered
+[ 2023-07-10 01:18:33,190 ] 68 root - INFO -     temp  rain_1h  snow_1h  clouds_all  holiday weather_main  time  month     day
+0  273.0     20.0     40.0        60.0     True      Drizzle     5      3  Sunday
+[ 2023-07-10 01:18:36,450 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:18:36] "POST /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:18:36,480 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:18:36] "[33mGET /style.css HTTP/1.1[0m" 404 -
+[ 2023-07-10 01:18:36,567 ] 187 werkzeug - INFO - 127.0.0.1 - - [10/Jul/2023 01:18:36] "GET /predict HTTP/1.1" 200 -
+[ 2023-07-10 01:19:57,413 ] 187 werkzeug - INFO -  * Detected change in 'D:\\MetroTrafficVolume\\app.py', reloading
