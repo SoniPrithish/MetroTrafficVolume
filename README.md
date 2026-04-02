@@ -124,6 +124,10 @@ flowchart LR
 
 ## 📸 Demo
 
+### Live site (static preview)
+
+Browse the project on GitHub Pages: [soniprithish.github.io/MetroTrafficVolume](https://soniprithish.github.io/MetroTrafficVolume/). That deployment is a static mirror of the landing page and UI screenshots. **Interactive forecasts** still require running the Flask app on your machine (see **How to Run** below).
+
 ### Landing Screen
 
 ![Landing screen](docs/home.png)

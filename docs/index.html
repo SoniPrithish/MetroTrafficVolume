@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetroTrafficVolume — Traffic demand forecasting</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .pages-banner {
+            margin-top: var(--space-4);
+            padding: var(--space-4) var(--space-5);
+            border-radius: var(--radius-lg);
+            border: 1px solid rgba(15, 118, 110, 0.2);
+            background: rgba(244, 251, 250, 0.95);
+            color: var(--ink-soft);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        .pages-banner strong { color: var(--ink); }
+        .demo-gallery {
+            display: grid;
+            gap: var(--space-5);
+            margin-top: var(--space-5);
+        }
+        .demo-shot {
+            border-radius: var(--radius-xl);
+            border: 1px solid var(--line-strong);
+            overflow: hidden;
+            box-shadow: var(--shadow-card);
+            background: var(--surface);
+        }
+        .demo-shot figcaption {
+            padding: var(--space-3) var(--space-4);
+            font-weight: 600;
+            color: var(--ink);
+            border-top: 1px solid var(--line);
+        }
+        .demo-shot img { width: 100%; height: auto; }
+        .site-footer {
+            margin: var(--space-8) auto var(--space-6);
+            padding-top: var(--space-6);
+            border-top: 1px solid var(--line);
+            color: var(--ink-soft);
+            font-size: 0.9rem;
+            text-align: center;
+        }
+        .site-footer a { color: var(--accent-strong); font-weight: 600; }
+    </style>
+</head>
+<body>
+    <div class="page-shell">
+        <div class="bg-orb orb-a"></div>
+        <div class="bg-orb orb-b"></div>
+        <div class="bg-grid"></div>
+
+        <header class="site-header">
+            <a class="brand" href="./">
+                <span class="brand-mark">MT</span>
+                <span class="brand-copy">
+                    <strong>MetroTrafficVolume</strong>
+                    <small>Traffic demand forecasting</small>
+                </span>
+            </a>
+
+            <nav class="nav-actions" aria-label="Primary">
+                <a class="nav-link" href="#workflow">How it works</a>
+                <a class="nav-link" href="#demo">Screenshots</a>
+                <a class="button button-ghost" href="https://github.com/SoniPrithish/MetroTrafficVolume">View on GitHub</a>
+            </nav>
+        </header>
+
+        <main class="content-wrap">
+            <div class="pages-banner" role="note">
+                <strong>GitHub Pages hosts this static preview only.</strong>
+                The interactive predictor runs with Flask on your machine after you clone the repo
+                (<code>python app.py</code>). This site mirrors the app landing page and UI captures.
+            </div>
+
+            <section class="hero">
+                <div class="hero-copy">
+                    <span class="eyebrow">Operational ML Demo</span>
+                    <h1>Forecast hourly traffic volume before congestion becomes visible.</h1>
+                    <p class="hero-text">
+                        MetroTrafficVolume turns weather and calendar inputs into a traffic demand forecast
+                        that can support roadway planning, control-room decision making, and staffing scenarios.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#demo">See the UI</a>
+                        <a class="button button-secondary" href="#workflow">See How It Works</a>
+                    </div>
+
+                    <div class="stat-strip">
+                        <article class="stat-card">
+                            <span class="stat-label">Dataset</span>
+                            <strong>48k+</strong>
+                            <span class="stat-caption">hourly observations</span>
+                        </article>
+                        <article class="stat-card">
+                            <span class="stat-label">Best baseline</span>
+                            <strong>R2 0.95</strong>
+                            <span class="stat-caption">random forest model</span>
+                        </article>
+                        <article class="stat-card">
+                            <span class="stat-label">Inference path</span>
+                            <strong>~23 ms</strong>
+                            <span class="stat-caption">preprocess + predict</span>
+                        </article>
+                    </div>
+                </div>
+
+                <aside class="hero-panel">
+                    <div class="hero-panel-card">
+                        <div class="panel-kicker">Live forecast example</div>
+                        <div class="panel-metric">3,008 vehicles/hr</div>
+                        <p>
+                            Example scenario: clear Monday morning conditions with low precipitation and
+                            light cloud cover.
+                        </p>
+
+                        <div class="mini-grid">
+                            <div>
+                                <span>Weather</span>
+                                <strong>Clear</strong>
+                            </div>
+                            <div>
+                                <span>Hour</span>
+                                <strong>09:00</strong>
+                            </div>
+                            <div>
+                                <span>Month</span>
+                                <strong>March</strong>
+                            </div>
+                            <div>
+                                <span>Flow</span>
+                                <strong>Steady</strong>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </section>
+
+            <section class="section-grid">
+                <article class="info-card">
+                    <span class="section-tag">Why it matters</span>
+                    <h2>Designed like a deployable forecasting workflow, not just a notebook.</h2>
+                    <p>
+                        The project packages ingestion, preprocessing, training, and inference into reusable
+                        modules, then exposes the final model through a Flask interface for interactive use.
+                    </p>
+                </article>
+
+                <article class="info-card">
+                    <span class="section-tag">Key signals</span>
+                    <ul class="feature-list">
+                        <li>Hourly weather inputs including rain, snow, temperature, and cloud cover</li>
+                        <li>Calendar context such as day-of-week, month, holiday status, and hour of day</li>
+                        <li>A model-selection workflow comparing multiple regressors before serving</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section class="section-block" id="workflow">
+                <div class="section-heading">
+                    <span class="section-tag">Workflow</span>
+                    <h2>How the system moves from raw data to a traffic forecast</h2>
+                </div>
+
+                <div class="workflow-grid">
+                    <article class="workflow-card">
+                        <span class="workflow-step">01</span>
+                        <h3>Ingest and clean</h3>
+                        <p>Read the metro traffic dataset, filter anomalies, and derive time-based features from timestamps.</p>
+                    </article>
+                    <article class="workflow-card">
+                        <span class="workflow-step">02</span>
+                        <h3>Transform features</h3>
+                        <p>Apply a mixed preprocessing pipeline for numerical scaling and categorical encoding.</p>
+                    </article>
+                    <article class="workflow-card">
+                        <span class="workflow-step">03</span>
+                        <h3>Train and compare</h3>
+                        <p>Benchmark multiple regressors and persist the strongest model with the preprocessor.</p>
+                    </article>
+                    <article class="workflow-card">
+                        <span class="workflow-step">04</span>
+                        <h3>Serve forecasts</h3>
+                        <p>Collect user inputs through the web app, run inference, and return an interpretable volume estimate.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section-block" id="demo">
+                <div class="section-heading">
+                    <span class="section-tag">Screenshots</span>
+                    <h2>Flask app preview</h2>
+                </div>
+                <div class="demo-gallery">
+                    <figure class="demo-shot">
+                        <img src="./home.png" alt="Landing screen of the MetroTrafficVolume Flask app" width="1200" height="675" loading="lazy">
+                        <figcaption>Landing screen</figcaption>
+                    </figure>
+                    <figure class="demo-shot">
+                        <img src="./form.png" alt="Forecast form with weather and time inputs" width="1200" height="675" loading="lazy">
+                        <figcaption>Forecast form</figcaption>
+                    </figure>
+                    <figure class="demo-shot">
+                        <img src="./result.png" alt="Prediction result showing estimated traffic volume" width="1200" height="675" loading="lazy">
+                        <figcaption>Prediction result</figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <footer class="site-footer">
+                <p>
+                    <a href="https://github.com/SoniPrithish/MetroTrafficVolume">Source code and setup instructions</a>
+                    — run the predictor locally with <code>python app.py</code>.
+                </p>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>
